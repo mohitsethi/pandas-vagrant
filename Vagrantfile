@@ -11,9 +11,11 @@ Vagrant::Config.run do |config|
       chef.cookbooks_path = "cookbooks"
       #chef.add_recipe "proxy"
       chef.add_recipe "apt"
+      chef.add_recipe "build-essential"
       chef.add_recipe "python"
       chef.add_recipe "vim"
       chef.add_recipe "git"
+      chef.add_recipe "pandas"
     end
   end
 end
